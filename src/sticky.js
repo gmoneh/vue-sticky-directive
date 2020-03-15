@@ -289,6 +289,7 @@ export default {
         el[namespace] = new Sticky(el, vnode.context);
       }
       el[namespace].doBind();
+      el[namespace].update();
     } else {
       if (el[namespace]) {
         el[namespace].doUnbind();
